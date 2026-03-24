@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyo
+*.pyc
+*pyd
+mlruns/
+mlartifacts/
+.ipynb_checkpoints/
+.vscode/
