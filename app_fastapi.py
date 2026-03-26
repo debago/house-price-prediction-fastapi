@@ -2,10 +2,12 @@ from fastapi import FastAPI
 import mlflow.pyfunc
 from pydantic import BaseModel
 import pandas as pd
+import os
 
 app =FastAPI()
 
-mlflow.set_tracking_uri(uri='http://127.0.0.1:5000')
+# mlflow.set_tracking_uri(uri='http://127.0.0.1:5000')
+mlflow.set_tracking_uri(uri=os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:5000"))
 
 # Load model from model registry
 model = mlflow.pyfunc.load_model("models:/Best Random Forest Regressor@latest")

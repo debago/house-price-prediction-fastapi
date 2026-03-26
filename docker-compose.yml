@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  mlflow:
+    build:
+      context: .
+      dockerfile: mlflow.dockerfile
+    ports:
+      -"5000:5000"
+    volumes:
+      -mlflow_data:/mlflow
+  
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MLFLOW_TRACKING_URI=https://mlflow:5000
+    depends_on:
+      - mlflow
+  
+  volumes:
+    mlflow_data:

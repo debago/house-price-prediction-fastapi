@@ -1,11 +1,9 @@
 
 #python cache
 __pycache__/
-*py[cod]
 *.pyo
 *.pyc
 *.pyd
-*.so
 
 # Virtual enviornment
 
@@ -21,43 +19,34 @@ env/
 
 mlruns/
 mlartifacts/
-*.db
 
 #Data files:
 
 data/
 *.csv
 *.parquet
-*.xlsx
 
 #jupyter
 .ipynb_checkpoints/
 *.ipnyb
 
-#IDE/ Editor
+#vscode
 .vscode/
-.idea/
 
 # Logs
 
 .log
-/logs
 
 #OS files
 
 .DS_Store
-Thumbs.db
 
-
+# Docker
+Dockerfile*
+dockerfile*
+docker-compose.yml
 
 # enviornment variable
 .env
-.env.*
-
-#build/packaging
-build/
-dist/
-*.egg-info
-
 
 
