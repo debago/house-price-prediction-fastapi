@@ -6,9 +6,9 @@ services:
       context: .
       dockerfile: mlflow.dockerfile
     ports:
-      -"5000:5000"
+      - "5000:5000"
     volumes:
-      -mlflow_data:/mlflow
+      - mlflow_data:/mlflow
   
   api:
     build: .
@@ -19,5 +19,5 @@ services:
     depends_on:
       - mlflow
   
-  volumes:
-    mlflow_data:
+volumes:
+  mlflow_data:
