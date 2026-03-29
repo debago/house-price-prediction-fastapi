@@ -6,7 +6,10 @@
 
 # Login to azure vm
 
+chmod 400 <private_key>
+#chmod 400 ~/Downloads/vm.pem
 ssh -i <private-pem key> azureuser@vm-public-ip
+# ssh -i ~/Downloads/vm.pem azureuser@40.75.103.57
 
 # inside vm
 
