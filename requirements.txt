@@ -221,7 +221,7 @@ importlib-metadata==8.7.1
     #   opentelemetry-api
 ipykernel==7.2.0
     # via -r requirements.in
-ipython==9.11.0
+ipython==9.10.0
     # via ipykernel
 ipython-pygments-lexers==1.1.1
     # via ipython
@@ -418,7 +418,6 @@ python-dotenv==1.2.2
     #   pydantic-settings
 pytz==2026.1.post1
     # via pandas
-pywin32==311
     # via
     #   docker
     #   dvc-task

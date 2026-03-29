@@ -27,7 +27,7 @@ RUN pip install --no-cache-dir mlflow
 RUN mkdir -p /mlflow/artifacts
 
 # allow all hosts to fix "invalid host header" error
-ENV MLFLOW_TRACKING_ALL_HOSTS=*
+ENV MLFLOW_TRACKING_ALLOW_HOSTS=*
 
 # expose MLFLOW UI port
 

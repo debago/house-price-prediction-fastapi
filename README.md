@@ -31,9 +31,9 @@ docker-compose --version
 
 docker-compose up --build -d (detached mode)
 docker-compose up --build 
-docker-compose build --no-cache mlflow
+docker-compose build --no-cache
 docker-compose up
- 
+
 docke-compose down -v
 
 
