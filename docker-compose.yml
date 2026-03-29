@@ -5,13 +5,17 @@ services:
     build:
       context: .
       dockerfile: dockerfile.mlflow
+    container_name: mlflow
     ports:
       - "5000:5000"
     volumes:
       - mlflow_data:/mlflow
   
   api:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi
     ports:
       - "8000:8000"
     environment:
