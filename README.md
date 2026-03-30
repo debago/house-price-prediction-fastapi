@@ -36,5 +36,7 @@ docker-compose up
 
 docke-compose down -v
 
+docker-compose build --no-cache mlflow (to build single sevice)
+
 
 docker-compose config
